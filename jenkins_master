@@ -14,7 +14,7 @@ pipeline {
                 echo 'Start Trigger'
                 script {
                     releasePackages = readJSON file: "${env.WORKSPACE}/data.json"
-                    echo "$releasePackages"
+                    echo "$releasePackages.name"
                 }
                 
             }
